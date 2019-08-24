@@ -41,9 +41,25 @@ html {
   min-height: 100%;
 }
 
+.header-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70pt;
+}
+
+.preamble-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40pt;
+}
+
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: blue;
+    color: black;
+    background-image: url(https://cdn.vox-cdn.com/uploads/chorus_image/image/63333512/shutterstock_296793953.0.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .footer {
   position: absolute;

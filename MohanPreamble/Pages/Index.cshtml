@@ -1,10 +1,34 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Preamble Challenge";
+}
+
+@{ 
+    string preambleText = "We the People of the United States, in order to form a more perfect union, " +
+                "establish justice, insure domestic tranquility, provide for the common defence, " +
+                "promote the general welfare, and secure the blessings of liberty to ourselves and our posterity, " +
+                "do ordain and establish this Constitution for the United States of America.";
+
+    var preamble = new MohanPreamble.Preamble();
+    var tWords = preamble.showTWords(preambleText);
+    var eWords = preamble.showEWords(preambleText);
+    var tEWords = preamble.showTEWords(preambleText);
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <br />
+    <h1 class="header-name">We The People...</h1>
+    <h5 class="preamble-text">@preambleText</h5>
+
+    <hr />
+    <p>In The Preamble To The Constitution:</p>
+
+    <section>
+
+        <p>There are <h2>@tWords</h2>  words that start with the letter 'T'.</p>
+        <p><h2>@eWords</h2>  words that start with the letter 'E'.</p>
+        <p>And <h2>@tEWords</h2> words that start with the letter 'T' and end with the letter 'E'.</p>
+
+    </section>
 </div>

@@ -56,17 +56,26 @@ body {
     margin-bottom: 60px;
     background-color: blue;
     color: black;
-    background-image: url(https://cdn.vox-cdn.com/uploads/chorus_image/image/63333512/shutterstock_296793953.0.jpg);
+    background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/1538265/original_bc5a73cf0579377788e754ffbb5965b4.jpg?1514412674);
     background-attachment: fixed;
+    background-size: 100%;
     background-repeat: no-repeat;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    color: black;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.footer-container {
+    color: black;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 2px;
 }

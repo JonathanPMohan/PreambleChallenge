@@ -1,15 +1,18 @@
 ﻿@page
 @model IndexModel
 @{
+    // Header Tab Title //
     ViewData["Title"] = "Preamble Challenge";
 }
 
 @{ 
+    // Setting Preamble To Variable //
     string preambleText = "We the People of the United States, in order to form a more perfect union, " +
                 "establish justice, insure domestic tranquility, provide for the common defence, " +
                 "promote the general welfare, and secure the blessings of liberty to ourselves and our posterity, " +
                 "do ordain and establish this Constitution for the United States of America.";
 
+    // Setting Preamble & T,E and TE words to variables // Calling Functions from Preamble.cs //
     var preamble = new MohanPreamble.Preamble();
     var tWords = preamble.showTWords(preambleText);
     var eWords = preamble.showEWords(preambleText);
@@ -18,17 +21,23 @@
 
 <div class="text-center">
     <br />
+    @*// Setting Main Header //*@
     <h1 class="header-name">We The People...</h1>
+
+    @*// Printing Preamble Text //*@ 
     <h5 class="preamble-text">@preambleText</h5>
 
     <hr />
     <br />
+    
+    @*// Solution Header //*@
     <h2>In the Preamble To The Constitution there are:</h2>
+    
     <br />
     <hr />
 
     <section>
-
+        @*// Printing T, E & T/E Words //*@
         <h1>@tWords</h1>  words that start with the letter 'T',</p>
         <p><h1>@eWords</h1>  words that start with the letter 'E',</p>
         <p>and <h1>@tEWords</h1> words that start with the letter 'T' and end with the letter 'E'.</p>
